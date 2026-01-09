@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="calculator">
+        <h2>CASIO</h2>
+        <div id="minordisplay"></div>
+        <input type="text" id="display" disabled>
+        <div id="buttons1">
+            <button class="big-operator" onclick="deleteall('Clear')">Clear</button>
+            <button class="big-operator" onclick="backspace('backspace')" style="width: 120px;">Backspace</button>
+            <button class="big-operator" onclick="equl('equl')">Enter</button>
+        </div>
+        <div id="buttons2">
+            <button class="operator" onclick="expfunction('x10')">Exp</button>
+            <button class="number" onclick="getvalue('7')">7</button>
+            <button class="number" onclick="getvalue('8')">8</button>
+            <button class="number" onclick="getvalue('9')">9</button>
+            <button class="operator" onclick="getvalue('/')">/</button>
+        </div>
+        <div id="buttons3">
+            <button class="operator" onclick="getvalue('In')">In</button>
+            <button class="number" onclick="getvalue('4')">4</button>
+            <button class="number" onclick="getvalue('5')">5</button>
+            <button class="number" onclick="getvalue('6')">6</button>
+            <button class="operator" onclick="getvalue('*')">*</button>
+        </div>
+        <div id="buttons4">
+            <button class="operator" onclick="squareRoot('sqrt')">sqrt</button>
+            <button class="number" onclick="getvalue('1')">1</button>
+            <button class="number" onclick="getvalue('2')">2</button>
+            <button class="number" onclick="getvalue('3')">3</button>
+            <button class="operator" onclick="getvalue('-')">-</button>
+        </div>
+        <div id="buttons5">
+            <button class="operator" onclick="square('*2')">sq</button>
+            <button class="number" onclick="getvalue('0')">0</button>
+            <button class="number" onclick="getvalue('.')">.</button>
+            <button class="operator" onclick="toggleSign()">+/-</button>
+            <button class="operator" onclick="getvalue('+')">+</button>
+        </div>
+        <div id="buttons6">
+            <button class="operator" onclick="getvalue('(')">(</button>
+            <button class="operator" onclick="sin('sin(')">sin</button>
+            <button class="operator" onclick="cos('cos(')">cos</button>
+            <button class="operator" onclick="tan('tan(')">tan</button>
+            <button class="operator" onclick="getvalue(')')">)</button>
+        </div>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
